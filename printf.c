@@ -1,11 +1,13 @@
 #include <stdio.h>
+int main( ) {
 
-int main () {
-   int ch;
+   char str[100];
+   int i;
 
-   for( ch = 75 ; ch <= 100; ch++ ) {
-      printf("ASCII value = %d, Character = %c\n", ch , ch );
-   }
+   printf( "Enter a value :");
+   scanf("%s %d", str, &i);
 
-   return(0);
+   printf( "\nYou entered: %s %d ", str, i);
+
+   return 0;
 }
